@@ -1,0 +1,514 @@
+body {
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.change#header {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+  position: fixed;
+  z-index: 999;
+  left: 0%;
+  top: 0%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 10px 30px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header button {
+  background-color: #fbb034;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  color: white;
+  padding: 7px;
+}
+
+header img {
+  width: 40px;
+  z-index: -1;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+header span {
+  color: #fbb034;
+}
+
+header .welcome {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+header .welcome::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 7%;
+  background-color: #fbb034;
+  height: 2px;
+  margin-top: 10px;
+}
+
+#slide {
+  position: relative;
+  cursor: text;
+}
+
+#slide img {
+  width: 100%;
+  height: 100vh;
+}
+
+#slide .overlay {
+  position: absolute;
+  top: 0%;
+  background-color: black;
+  width: 100%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  z-index: 5;
+  opacity: 0.7;
+}
+
+#slide .carousel-caption {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  text-align: left;
+  z-index: 6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: yoga;
+          animation-name: yoga;
+}
+
+#slide .carousel-caption h5 {
+  font-size: 6rem;
+  font-weight: 800;
+  color: white;
+}
+
+#slide .carousel-caption p {
+  font-size: 1.2rem;
+}
+
+#slide .carousel-caption span {
+  color: #f89d0a;
+}
+
+@-webkit-keyframes yoga {
+  from {
+    opacity: 0;
+    left: 15%;
+  }
+  to {
+    opacity: 1;
+    left: 10%;
+  }
+}
+
+@keyframes yoga {
+  from {
+    opacity: 0;
+    left: 15%;
+  }
+  to {
+    opacity: 1;
+    left: 10%;
+  }
+}
+
+#slide button {
+  display: none;
+}
+
+#benefits {
+  border-top: 5px solid #fbb034;
+  height: 150vh;
+  width: 100%;
+  padding-top: 70px;
+  background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(img/yoga1.jpg);
+  background-size: cover;
+}
+
+#benefits .why {
+  position: relative;
+  z-index: 3;
+}
+
+#benefits .why h1 {
+  font-size: 7rem;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#benefits .why h1 span {
+  color: #fbb034;
+  letter-spacing: 2px;
+}
+
+#benefits .why p {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+#benefits .why p span {
+  color: #f89d0a;
+}
+
+#benefits .row {
+  margin-bottom: 50px;
+}
+
+#benefits .row .card {
+  height: 40vh;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 30px 80px;
+  cursor: pointer;
+  background-color: #f89d0a;
+  z-index: 3;
+}
+
+#benefits .row .card img {
+  width: 12%;
+  left: 0%;
+  top: 30%;
+  position: absolute;
+  z-index: -4;
+}
+
+#benefits .row .card:hover {
+  background-color: black;
+}
+
+#benefits .row .card:hover h5 {
+  color: #fbb034;
+}
+
+#benefits .row .card:hover p {
+  color: white;
+}
+
+#benefits .row .card h5 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+#owner {
+  height: 170vh;
+  background-color: #f89d0a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#owner h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: 2px;
+}
+
+#owner cite {
+  color: white;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#owner .row {
+  margin-top: 100px;
+  background-color: white;
+  height: 100vh;
+  text-align: center;
+  padding: 0px 50px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#owner .row:hover {
+  background-color: black;
+  color: white;
+}
+
+#owner .row img {
+  width: 10%;
+}
+
+#owner .row p {
+  font-size: 1.2rem;
+}
+
+#owner .row span {
+  color: #fbb034;
+}
+
+#payment {
+  height: 140vh;
+  background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(img/payment.jpg);
+  background-size: cover;
+}
+
+#payment .pass {
+  margin-top: 100px;
+}
+
+#payment .pass h1 {
+  font-size: 7rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#payment .pass h1 span {
+  color: #f89d0a;
+}
+
+#payment .pass p {
+  color: white;
+  font-size: 1.6rem;
+  opacity: 1;
+}
+
+#payment .pass p span {
+  color: #f89d0a;
+  opacity: 1;
+}
+
+#payment .venue {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #111;
+  width: 33rem;
+  height: 65vh;
+  text-align: center;
+  padding: 20px;
+}
+
+#payment .venue span, #payment .venue strong {
+  color: #f89d0a;
+  font-size: 1rem;
+}
+
+#payment .venue i {
+  text-align: center;
+  color: white;
+  padding-right: 30px;
+}
+
+#payment .venue .studio {
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+#payment #form {
+  width: 30rem;
+}
+
+#payment #form .same {
+  width: 250px;
+  height: 7vh;
+  padding: 7px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  color: #fbb034;
+  border-bottom: 1px solid #fbb034;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#payment #form #tel, #payment #form #number {
+  width: 500px;
+  height: 7vh;
+  border: none;
+  outline: none;
+  padding: 7px;
+  margin: 5px;
+  border-bottom: 1px solid #fbb034;
+  color: #fbb034;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#payment #form span {
+  color: #fbb034;
+}
+
+#payment #form h2 {
+  color: white;
+}
+
+#payment #form #submit {
+  padding: 10px 30px;
+  border: none;
+  background-color: #f89d0a;
+}
+
+#payment #form .alert {
+  color: red;
+}
+
+#contact {
+  text-align: center;
+  color: white;
+}
+
+#contact a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  color: #fbb034;
+  margin-top: 0px;
+  color: gray;
+}
+
+footer span {
+  color: #fbb034;
+}
+
+@media screen and (max-width: 767px) {
+  header nav {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  header button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  header img {
+    display: none;
+  }
+  header .welcome {
+    display: none;
+  }
+  #slide {
+    position: relative;
+    cursor: pointer;
+  }
+  #slide img {
+    width: 100%;
+    height: 100vh;
+  }
+  #slide .overlay {
+    opacity: 0.4;
+  }
+  #slide .carousel-caption {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+  }
+  #slide .carousel-caption h5 {
+    font-size: 2rem;
+  }
+  #slide .carousel-caption p {
+    font-size: 0.8rem;
+  }
+  #slide button {
+    display: none;
+  }
+  #benefits {
+    border-top: 5px solid #fbb034;
+    height: 220vh;
+  }
+  #benefits .why h1 {
+    font-size: 2rem;
+  }
+  #benefits .why p {
+    font-size: 1rem;
+  }
+  #benefits .row .card {
+    height: 40vh;
+    padding: 30px 25px;
+    margin-bottom: 20px;
+  }
+  #owner {
+    padding-top: 50px;
+  }
+  #owner h1 {
+    font-size: 2rem;
+  }
+  #owner cite {
+    color: white;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  #owner .row {
+    margin-top: 50px;
+    padding: 0px 30px;
+  }
+  #owner .row img {
+    width: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 3px 7px #fbb034;
+            box-shadow: 0px 3px 7px #fbb034;
+  }
+  #payment {
+    height: 190vh;
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(img/payment.jpg);
+    background-size: cover;
+  }
+  #payment .pass {
+    margin-top: 100px;
+  }
+  #payment .pass h1 {
+    font-size: 2rem;
+  }
+  #payment .pass p {
+    font-size: 1rem;
+  }
+  #payment .venue {
+    width: 20rem;
+    height: 60vh;
+    padding: 0px;
+  }
+  #payment #form {
+    margin-top: 50px;
+    width: 30rem;
+  }
+  #payment #form .same {
+    width: 300px;
+  }
+  #payment #form #tel, #payment #form #number {
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
